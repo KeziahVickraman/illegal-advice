@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-billboard {
+    font-family: 'Bebas Neue', 'Anton', Impact, sans-serif;
+    letter-spacing: 0.04em;
+  }
+  .font-anton {
+    font-family: 'Anton', Impact, sans-serif;
+    letter-spacing: 0.03em;
+  }
+  .font-marker {
+    font-family: 'Permanent Marker', cursive;
+  }
+}
+
+/* Faux Strip-Mall Wood Paneling */
+.bg-faux-wood {
+  background: repeating-linear-gradient(
+    90deg,
+    #4d260f 0px,
+    #5b2e12 8px,
+    #43200b 16px,
+    #663416 26px,
+    #4d260f 38px
+  );
+}
+
+.bg-faux-wood-dark {
+  background: repeating-linear-gradient(
+    90deg,
+    #261206 0px,
+    #331809 8px,
+    #1d0d04 16px,
+    #3c1d0c 26px,
+    #261206 38px
+  );
+}
+
+/* Strip-Mall Marble Effect */
+.bg-faux-marble {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(203, 213, 225, 0.5) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(226, 232, 240, 0.6) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(203, 213, 225, 0.4) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(241, 245, 249, 0.8) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(148, 163, 184, 0.3) 0px, transparent 50%);
+}
+
+.bg-faux-marble-dark {
+  background-color: #0f172a;
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(30, 41, 59, 0.6) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(51, 65, 85, 0.5) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(30, 41, 59, 0.4) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(71, 85, 105, 0.5) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(15, 23, 42, 0.8) 0px, transparent 50%);
+}
+
+/* Comic / Strip-Mall 3D Shadows */
+.retro-shadow-black {
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.retro-shadow-gold {
+  box-shadow: 6px 6px 0px #ca8a04;
+}
+
+.retro-shadow-red {
+  box-shadow: 6px 6px 0px #991b1b;
+}
+
+.retro-shadow-blue {
+  box-shadow: 6px 6px 0px #1e40af;
+}
+
+.retro-shadow-lg {
+  box-shadow: 10px 10px 0px #000000;
+}
+
+/* Flashing Chaser Bulbs Animation */
+@keyframes bulbPulse {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 8px #fef08a); }
+  50% { opacity: 0.3; filter: none; }
+}
+
+.animate-bulb-slow {
+  animation: bulbPulse 1.4s ease-in-out infinite;
+}
+
+.animate-bulb-fast {
+  animation: bulbPulse 0.7s ease-in-out infinite;
+}
+
+/* Starburst Badge Clip-path */
+.clip-starburst {
+  clip-path: polygon(
+    50% 0%, 63% 13%, 81% 6%, 86% 23%, 100% 28%, 95% 45%, 100% 61%, 88% 72%, 91% 89%, 74% 88%, 65% 100%, 50% 93%,
+    35% 100%, 26% 88%, 9% 89%, 12% 72%, 0% 61%, 5% 45%, 0% 28%, 14% 23%, 19% 6%, 37% 13%
+  );
+}
+
+/* Flip card 3D perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Legal pad paper lines */
+.bg-legal-pad {
+  background-color: #fef9c3;
+  background-image: 
+    linear-gradient(#facc15 1px, transparent 1px),
+    linear-gradient(90deg, transparent 40px, #ef4444 41px, transparent 42px);
+  background-size: 100% 24px, 100% 100%;
+}

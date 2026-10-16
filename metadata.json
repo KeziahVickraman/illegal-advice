@@ -1,0 +1,6 @@
+{
+  "name": "Not Guilty-ish Legal",
+  "description": "Strip-mall comedy meets criminal legal education: burden of proof, defences, and your rights explained with sitcom flair.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
